@@ -16,6 +16,7 @@ if __name__ == '__main__':
     v_ndarray_softmaxed = v_tensor_softmaxed.cpu().numpy()
     v_ndarray_exponent = v_tensor_exponent.cpu().numpy()
     bins = 100
+    # Softmax change the uniform distribution to logarithmic distribution, not Boltzmann distribution.
     plt.subplot(411)
     plt.hist(v, bins)
     plt.subplot(412)
